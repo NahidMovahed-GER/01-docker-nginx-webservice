@@ -83,4 +83,5 @@ docker run -d -p 8081:80 --name webservice docker-nginx-webservice
 ### 4. Alten Container löschen (falls nötig)
 ```
 docker stop webservice
-docker rm webservice ```
+docker rm webservice 
+```
