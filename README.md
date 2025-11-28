@@ -49,6 +49,7 @@ Auf dem Host ist der Service über einen frei gewählten Port erreichbar (z. B. 
 ```bash
 docker build -t docker-nginx-webservice .
 
+
 ### Container starten
 ```bash
 docker run -d -p 8080:80 --name webservice docker-nginx-webservice
