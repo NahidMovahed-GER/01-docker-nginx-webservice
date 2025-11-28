@@ -63,17 +63,24 @@ http://localhost:8080
 Wenn der Dienst nicht erreichbar ist, gehe ich so vor:
 
 ### 1. Läuft der Container?
-``` docker ps -a ```
+``` 
+docker ps -a
+```
 
 ### 2. Logs prüfen
-``` docker logs webservice ```
+``` 
+docker logs webservice
+ ```
 
 ### 3. Host-Port belegt?
 
 Container mit anderem Port starten:
 
-``` docker run -d -p 8081:80 --name webservice docker-nginx-webservice ```
+``` 
+docker run -d -p 8081:80 --name webservice docker-nginx-webservice
+ ```
 
 ### 4. Alten Container löschen (falls nötig)
-```docker stop webservice```
-```docker rm webservice ```
+```
+docker stop webservice
+docker rm webservice ```
