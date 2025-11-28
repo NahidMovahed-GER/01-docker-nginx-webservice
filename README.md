@@ -46,15 +46,17 @@ Auf dem Host ist der Service über einen frei gewählten Port erreichbar (z. B. 
 
 ### Image bauen
 
-
+```
 docker build -t docker-nginx-webservice .
-
+```
 
 ### Container starten
 ```
 docker run -d -p 8080:80 --name webservice docker-nginx-webservice
+```
 
 
-Der Dienst ist erreichbar unter:
-
+### Der Dienst ist erreichbar unter:
+```
 http://localhost:8080
+```
